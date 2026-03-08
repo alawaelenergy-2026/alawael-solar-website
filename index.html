@@ -2,33 +2,23 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>شركة الأوائل للطاقة الشمسية</title>
+<title>الأوائل للطاقة الشمسية</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Tahoma, Arial, sans-serif;
+font-family:Tahoma;
 background:#f4f6f9;
-color:#222;
 }
-
-/* الهيدر */
 
 header{
 background:#0d1b2a;
 color:white;
 padding:15px 40px;
 display:flex;
-align-items:center;
 justify-content:space-between;
-}
-
-.logo{
-display:flex;
 align-items:center;
-gap:10px;
 }
 
 .logo img{
@@ -42,10 +32,8 @@ margin-left:20px;
 font-size:18px;
 }
 
-/* الصورة الرئيسية */
-
 .hero{
-background-image:url("solar.jpg");
+background-image:url("project1.jpeg");
 background-size:cover;
 background-position:center;
 height:400px;
@@ -54,29 +42,22 @@ align-items:center;
 justify-content:center;
 color:white;
 font-size:32px;
-font-weight:bold;
 text-shadow:2px 2px 5px black;
 }
 
-/* قسم المشاريع */
-
-.projects{
+.products{
 padding:50px;
 text-align:center;
 }
 
-.projects h2{
-margin-bottom:40px;
-}
-
-.project-grid{
+.grid{
 display:flex;
 gap:20px;
 justify-content:center;
 flex-wrap:wrap;
 }
 
-.project{
+.card{
 background:white;
 padding:20px;
 width:250px;
@@ -84,12 +65,10 @@ border-radius:10px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.project img{
+.card img{
 width:100%;
 border-radius:8px;
 }
-
-/* الفوتر */
 
 footer{
 background:#0d1b2a;
@@ -108,54 +87,47 @@ margin-top:40px;
 
 <div class="logo">
 <img src="logo.png">
-<h2>الأوائل للطاقة الشمسية</h2>
 </div>
 
 <nav>
 <a href="#">الرئيسية</a>
-<a href="#">المشاريع</a>
+<a href="#">المنتجات</a>
 <a href="#">اتصل بنا</a>
 </nav>
 
 </header>
 
-
 <div class="hero">
 أفضل حلول الطاقة الشمسية
 </div>
 
+<section class="products">
 
-<section class="projects">
+<h2>منتجاتنا</h2>
 
-<h2>مشاريعنا</h2>
+<div class="grid">
 
-<div class="project-grid">
-
-<div class="project">
-<img src="project1.jpg">
-<h3>نظام شمسي منزلي</h3>
-<p>تركيب نظام طاقة شمسية لمنزل خاص.</p>
+<div class="card">
+<img src="hybrid 6 k.jpg">
+<h3>Hybrid Inverter</h3>
 </div>
 
-<div class="project">
-<img src="project2.jpg">
-<h3>مشروع تجاري</h3>
-<p>تزويد شركة بالطاقة الشمسية.</p>
+<div class="card">
+<img src="30K SG02.jpg">
+<h3>30KW Inverter</h3>
 </div>
 
-<div class="project">
-<img src="project3.jpg">
-<h3>مزرعة شمسية</h3>
-<p>إنشاء محطة طاقة شمسية كبيرة.</p>
+<div class="card">
+<img src="deye-30kw-3pha-790x790.png">
+<h3>Deye Solar Inverter</h3>
 </div>
 
 </div>
 
 </section>
 
-
 <footer>
-© 2026 شركة الأوائل للطاقة الشمسية
+© شركة الأوائل للطاقة الشمسية
 </footer>
 
 </body>
