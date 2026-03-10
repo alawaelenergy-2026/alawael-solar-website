@@ -9,8 +9,8 @@
 
 body{
 margin:0;
-font-family:TahomA;
-background:#f2f2f2;
+font-family:Tahoma;
+background:#f4f4f4;
 }
 
 header{
@@ -22,28 +22,19 @@ justify-content:space-between;
 align-items:center;
 }
 
-header img{
-height:50px;
-}
-
 nav a{
 color:white;
-margin-left:20px;
 text-decoration:none;
+margin-left:20px;
 font-size:18px;
 }
 
 .hero{
-height:400px;
-background-image:url("project1.jpeg");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
+background:#1b263b;
 color:white;
-font-size:35px;
-text-shadow:2px 2px 5px black;
+text-align:center;
+padding:80px 20px;
+font-size:30px;
 }
 
 .section{
@@ -53,20 +44,21 @@ text-align:center;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
+max-width:900px;
+margin:auto;
 }
 
 .card{
 background:white;
-padding:20px;
+padding:40px;
 border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-.card img{
-width:100%;
-border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+text-decoration:none;
+color:black;
+font-size:20px;
+font-weight:bold;
 }
 
 footer{
@@ -78,89 +70,56 @@ margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-<img src="logo.png">
+<h2>شركة الأوائل للطاقة الشمسية</h2>
 
 <nav>
 <a href="#home">الرئيسية</a>
-<a href="#inverters">الأجهزة</a>
-<a href="#batteries">البطاريات</a>
-<a href="#panels">الألواح</a>
-<a href="#bos">BOS</a>
+<a href="#products">المنتجات</a>
 <a href="#contact">اتصل بنا</a>
 </nav>
 
 </header>
 
+
 <div class="hero" id="home">
 أفضل حلول الطاقة الشمسية
 </div>
 
-<section class="section" id="inverters">
 
-<h2>الأجهزة (Inverters)</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="hybrid 6 k.jpg">
-<p>Hybrid 6KW</p>
-</div>
-
-<div class="card">
-<img src="30K SG02.jpg">
-<p>Deye 30KW</p>
-</div>
-
-<div class="card">
-<img src="deye-30kw-3pha-790x790.png">
-<p>Deye 3 Phase</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
+<section class="section" id="products">
 
 <h2>المنتجات</h2>
 
 <div class="grid">
 
-<a href="inverters.html" class="card">
-<img src="hybrid 6 k.jpg">
-<p>الأجهزة</p>
-</a>
+<a href="inverters.html" class="card">الأجهزة</a>
 
-<a href="batteries.html" class="card">
-<img src="battery.jpg">
-<p>البطاريات</p>
-</a>
+<a href="batteries.html" class="card">البطاريات</a>
 
-<a href="panels.html" class="card">
-<img src="panel.jpg">
-<p>الألواح الشمسية</p>
-</a>
+<a href="panels.html" class="card">الألواح الشمسية</a>
 
-<a href="bos.html" class="card">
-<img src="project1.jpeg">
-<p>BOS</p>
-</a>
+<a href="bos.html" class="card">BOS</a>
 
 </div>
 
 </section>
+
+
 <footer id="contact">
 
 <h3>اتصل بنا</h3>
 
 <p>شركة الأوائل للطاقة الشمسية</p>
+
 <p>📞 00972598688452</p>
+
 <p>📍 طولكرم - فلسطين</p>
 
 </footer>
