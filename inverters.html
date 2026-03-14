@@ -3,162 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الأجهزة - شمس المستقبل</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>الأجهزة</title>
     <style>
-        /* تنسيق إضافي للصفحة */
+        /* تنسيقات بسيطة لشبكة المنتجات */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9f9f9;
+            direction: rtl;
+            padding: 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 10px 5px 15px;
+        }
         .product-card img {
-            height: 180px;
-            object-fit: contain; /* لجعل الصورة كاملة داخل البطاقة */
-            background-color: #f0f0f0;
+            width: 100%;
+            height: 140px;
+            object-fit: contain;
+            background: #f0f0f0;
+            border-bottom: 1px solid #ddd;
         }
         .product-card h3 {
-            font-size: 1rem;
-            margin: 10px 0 5px;
+            margin: 10px 0 0;
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .product-card p {
+            color: #666;
+            font-size: 0.8rem;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">شمس المستقبل</div>
-            <ul>
-                <li><a href="../index.html">الرئيسية</a></li>
-                <li><a href="index.html">الأجهزة</a></li>
-                <li><a href="../بطاريات/index.html">البطاريات</a></li>
-                <li><a href="../الواح/index.html">الألواح</a></li>
-            </ul>
+    <div class="products-grid">
+        <!-- 30k-3p-lv.jpg.png -->
+        <div class="product-card">
+            <img src="صور/30k-3p-lv.jpg.png" alt="30k-3p-lv">
+            <h3>30k-3p-lv</h3>
+            <p>انفرتر ثلاثي الطور 30كيلو</p>
         </div>
-    </nav>
-
-    <div class="container">
-        <h1>الأجهزة الكهربائية والتحكم</h1>
-        <div class="products-grid">
-            <!-- بداية بطاقات المنتجات -->
-            <div class="product-card">
-                <img src="صور/30k-3p-lv.jpg.png" alt="30k-3p-lv">
-                <h3>انفرتر 30كيلو ثلاثي الطور</h3>
-                <p>DEYE 30K LV</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-30k-lv.jpg.jpg" alt="deye-30k-lv">
-                <h3>انفرتر DEYE 30K LV</h3>
-                <p>هجين 30كيلو</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-hybrid-12kjpg.jpg" alt="deye-hybrid-12k">
-                <h3>انفرتر DEYE هجين 12كيلو</h3>
-                <p>Hybrid 12K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-hybrid-15kjpg.webp" alt="deye-hybrid-15k">
-                <h3>انفرتر DEYE هجين 15كيلو</h3>
-                <p>Hybrid 15K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-hybrid-20kjpg.jpg" alt="deye-hybrid-20k">
-                <h3>انفرتر DEYE هجين 20كيلو</h3>
-                <p>Hybrid 20K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-hybrid-25kjpg.jpg" alt="deye-hybrid-25k">
-                <h3>انفرتر DEYE هجين 25كيلو</h3>
-                <p>Hybrid 25K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-hybrid-30kjpg.jpg" alt="deye-hybrid-30k">
-                <h3>انفرتر DEYE هجين 30كيلو</h3>
-                <p>Hybrid 30K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-hybrid-8kjpg.webp" alt="deye-hybrid-8k">
-                <h3>انفرتر DEYE هجين 8كيلو</h3>
-                <p>Hybrid 8K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-ongrid-10k-bm2.jpg.jpg" alt="deye-ongrid-10k-bm2">
-                <h3>انفرتر DEYE متصل بالشبكة 10كيلو</h3>
-                <p>On Grid 10K BM2</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-ongrid-10kjpg.webp" alt="deye-ongrid-10k">
-                <h3>انفرتر DEYE متصل بالشبكة 10كيلو</h3>
-                <p>On Grid 10K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-ongrid-20kjpg.png" alt="deye-ongrid-20k">
-                <h3>انفرتر DEYE متصل بالشبكة 20كيلو</h3>
-                <p>On Grid 20K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-ongrid-30kjpg" alt="deye-ongrid-30k">
-                <h3>انفرتر DEYE متصل بالشبكة 30كيلو</h3>
-                <p>On Grid 30K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-ongrid-50kjpg.jpg" alt="deye-ongrid-50k">
-                <h3>انفرتر DEYE متصل بالشبكة 50كيلو</h3>
-                <p>On Grid 50K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/deye-ongrid-8k.jpg.jpg" alt="deye-ongrid-8k">
-                <h3>انفرتر DEYE متصل بالشبكة 8كيلو</h3>
-                <p>On Grid 8K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/hybrid-10k.jpg.webp" alt="hybrid-10k">
-                <h3>انفرتر هجين 10كيلو</h3>
-                <p>Hybrid 10K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/hybrid-15k.jpg.jpg" alt="hybrid-15k">
-                <h3>انفرتر هجين 15كيلو</h3>
-                <p>Hybrid 15K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/hybrid-50k.jpg.webp" alt="hybrid-50k">
-                <h3>انفرتر هجين 50كيلو</h3>
-                <p>Hybrid 50K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/hybrid-80k.jpg.jpg" alt="hybrid-80k">
-                <h3>انفرتر هجين 80كيلو</h3>
-                <p>Hybrid 80K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/hybrid-8k.jpg.jpg" alt="hybrid-8k">
-                <h3>انفرتر هجين 8كيلو</h3>
-                <p>Hybrid 8K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/hybrid-offgrid-6k.jpg.png" alt="hybrid-offgrid-6k">
-                <h3>انفرتر هجين خارج الشبكة 6كيلو</h3>
-                <p>Off Grid Hybrid 6K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/hybrid-ongrid-6k.jpg.jpg" alt="hybrid-ongrid-6k">
-                <h3>انفرتر هجين متصل بالشبكة 6كيلو</h3>
-                <p>On Grid Hybrid 6K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/isuna-8k.jpg.jpg" alt="isuna-8k">
-                <h3>انفرتر Isuna 8كيلو</h3>
-                <p>Isuna 8K</p>
-            </div>
-            <div class="product-card">
-                <img src="صور/solax-7.5.jpg.png" alt="solax-7.5">
-                <h3>انفرتر Solax 7.5كيلو</h3>
-                <p>Solax 7.5K</p>
-            </div>
-            <!-- نهاية بطاقات المنتجات -->
+        <!-- deye-30k-lv.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-30k-lv.jpg.jpg" alt="deye-30k-lv">
+            <h3>deye-30k-lv</h3>
+            <p>DEYE 30K LV</p>
+        </div>
+        <!-- deye-hybrid-12kjpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-hybrid-12kjpg.jpg" alt="deye-hybrid-12k">
+            <h3>deye-hybrid-12k</h3>
+            <p>DEYE هجين 12كيلو</p>
+        </div>
+        <!-- deye-hybrid-15kjpg.webp -->
+        <div class="product-card">
+            <img src="صور/deye-hybrid-15kjpg.webp" alt="deye-hybrid-15k">
+            <h3>deye-hybrid-15k</h3>
+            <p>DEYE هجين 15كيلو</p>
+        </div>
+        <!-- deye-hybrid-20kjpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-hybrid-20kjpg.jpg" alt="deye-hybrid-20k">
+            <h3>deye-hybrid-20k</h3>
+            <p>DEYE هجين 20كيلو</p>
+        </div>
+        <!-- deye-hybrid-25kjpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-hybrid-25kjpg.jpg" alt="deye-hybrid-25k">
+            <h3>deye-hybrid-25k</h3>
+            <p>DEYE هجين 25كيلو</p>
+        </div>
+        <!-- deye-hybrid-30kjpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-hybrid-30kjpg.jpg" alt="deye-hybrid-30k">
+            <h3>deye-hybrid-30k</h3>
+            <p>DEYE هجين 30كيلو</p>
+        </div>
+        <!-- deye-hybrid-8kjpg.webp -->
+        <div class="product-card">
+            <img src="صور/deye-hybrid-8kjpg.webp" alt="deye-hybrid-8k">
+            <h3>deye-hybrid-8k</h3>
+            <p>DEYE هجين 8كيلو</p>
+        </div>
+        <!-- deye-ongrid-10k-bm2.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-ongrid-10k-bm2.jpg.jpg" alt="deye-ongrid-10k-bm2">
+            <h3>deye-ongrid-10k-bm2</h3>
+            <p>DEYE متصل بالشبكة 10كيلو BM2</p>
+        </div>
+        <!-- deye-ongrid-10kjpg.webp -->
+        <div class="product-card">
+            <img src="صور/deye-ongrid-10kjpg.webp" alt="deye-ongrid-10k">
+            <h3>deye-ongrid-10k</h3>
+            <p>DEYE متصل بالشبكة 10كيلو</p>
+        </div>
+        <!-- deye-ongrid-20kjpg.png -->
+        <div class="product-card">
+            <img src="صور/deye-ongrid-20kjpg.png" alt="deye-ongrid-20k">
+            <h3>deye-ongrid-20k</h3>
+            <p>DEYE متصل بالشبكة 20كيلو</p>
+        </div>
+        <!-- deye-ongrid-30kjpg (بدون امتداد صريح) -->
+        <div class="product-card">
+            <img src="صور/deye-ongrid-30kjpg" alt="deye-ongrid-30k">
+            <h3>deye-ongrid-30k</h3>
+            <p>DEYE متصل بالشبكة 30كيلو</p>
+        </div>
+        <!-- deye-ongrid-50kjpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-ongrid-50kjpg.jpg" alt="deye-ongrid-50k">
+            <h3>deye-ongrid-50k</h3>
+            <p>DEYE متصل بالشبكة 50كيلو</p>
+        </div>
+        <!-- deye-ongrid-8k.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/deye-ongrid-8k.jpg.jpg" alt="deye-ongrid-8k">
+            <h3>deye-ongrid-8k</h3>
+            <p>DEYE متصل بالشبكة 8كيلو</p>
+        </div>
+        <!-- hybrid-10k.jpg.webp -->
+        <div class="product-card">
+            <img src="صور/hybrid-10k.jpg.webp" alt="hybrid-10k">
+            <h3>hybrid-10k</h3>
+            <p>هجين 10كيلو</p>
+        </div>
+        <!-- hybrid-15k.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/hybrid-15k.jpg.jpg" alt="hybrid-15k">
+            <h3>hybrid-15k</h3>
+            <p>هجين 15كيلو</p>
+        </div>
+        <!-- hybrid-50k.jpg.webp -->
+        <div class="product-card">
+            <img src="صور/hybrid-50k.jpg.webp" alt="hybrid-50k">
+            <h3>hybrid-50k</h3>
+            <p>هجين 50كيلو</p>
+        </div>
+        <!-- hybrid-80k.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/hybrid-80k.jpg.jpg" alt="hybrid-80k">
+            <h3>hybrid-80k</h3>
+            <p>هجين 80كيلو</p>
+        </div>
+        <!-- hybrid-8k.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/hybrid-8k.jpg.jpg" alt="hybrid-8k">
+            <h3>hybrid-8k</h3>
+            <p>هجين 8كيلو</p>
+        </div>
+        <!-- hybrid-offgrid-6k.jpg.png -->
+        <div class="product-card">
+            <img src="صور/hybrid-offgrid-6k.jpg.png" alt="hybrid-offgrid-6k">
+            <h3>hybrid-offgrid-6k</h3>
+            <p>هجين خارج الشبكة 6كيلو</p>
+        </div>
+        <!-- hybrid-ongrid-6k.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/hybrid-ongrid-6k.jpg.jpg" alt="hybrid-ongrid-6k">
+            <h3>hybrid-ongrid-6k</h3>
+            <p>هجين متصل بالشبكة 6كيلو</p>
+        </div>
+        <!-- isuna-8k.jpg.jpg -->
+        <div class="product-card">
+            <img src="صور/isuna-8k.jpg.jpg" alt="isuna-8k">
+            <h3>isuna-8k</h3>
+            <p>Isuna 8كيلو</p>
+        </div>
+        <!-- solax-7.5.jpg.png -->
+        <div class="product-card">
+            <img src="صور/solax-7.5.jpg.png" alt="solax-7.5">
+            <h3>solax-7.5</h3>
+            <p>Solax 7.5كيلو</p>
         </div>
     </div>
-
-    <footer>
-        <p>شركة شمس المستقبل للطاقة الشمسية</p>
-        <p class="phone">📞 0123456789</p>
-        <p>📍 القاهرة، مصر</p>
-        <p>© 2025 جميع الحقوق محفوظة</p>
-    </footer>
 </body>
 </html>
