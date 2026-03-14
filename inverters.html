@@ -2,105 +2,163 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>الأجهزة والانفيرترات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأجهزة - شمس المستقبل</title>
+    <link rel="stylesheet" href="../style.css">
     <style>
-        body { font-family: Arial, sans-serif; direction: rtl; text-align: center; }
-        .inverter { display: inline-block; margin: 20px; }
-        .inverter img { width: 200px; height: auto; }
-        .inverter-name { margin-top: 10px; font-weight: bold; }
+        /* تنسيق إضافي للصفحة */
+        .product-card img {
+            height: 180px;
+            object-fit: contain; /* لجعل الصورة كاملة داخل البطاقة */
+            background-color: #f0f0f0;
+        }
+        .product-card h3 {
+            font-size: 1rem;
+            margin: 10px 0 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>الأجهزة والانفيرترات</h1>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">شمس المستقبل</div>
+            <ul>
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="index.html">الأجهزة</a></li>
+                <li><a href="../بطاريات/index.html">البطاريات</a></li>
+                <li><a href="../الواح/index.html">الألواح</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="inverter">
-        <img src="deye-hybrid-30k.jpg" alt="Deye Hybrid 30K">
-        <div class="inverter-name">Deye Hybrid 30K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-hybrid-8k.jpg" alt="Deye Hybrid 8K">
-        <div class="inverter-name">Deye Hybrid 8K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-hybrid-12k.jpg" alt="Deye Hybrid 12K">
-        <div class="inverter-name">Deye Hybrid 12K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-hybrid-15k.jpg" alt="Deye Hybrid 15K">
-        <div class="inverter-name">Deye Hybrid 15K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-hybrid-20k.jpg" alt="Deye Hybrid 20K">
-        <div class="inverter-name">Deye Hybrid 20K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-hybrid-25k.jpg" alt="Deye Hybrid 25K">
-        <div class="inverter-name">Deye Hybrid 25K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-ongrid-8k.jpg" alt="Deye OnGrid 8K">
-        <div class="inverter-name">Deye OnGrid 8K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-ongrid-10k-bm2.jpg" alt="Deye OnGrid 10K BM2">
-        <div class="inverter-name">Deye OnGrid 10K BM2</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-ongrid-10k.jpg" alt="Deye OnGrid 10K">
-        <div class="inverter-name">Deye OnGrid 10K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-ongrid-20k.jpg" alt="Deye OnGrid 20K">
-        <div class="inverter-name">Deye OnGrid 20K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-ongrid-50k.jpg" alt="Deye OnGrid 50K">
-        <div class="inverter-name">Deye OnGrid 50K</div>
-    </div>
-    <div class="inverter">
-        <img src="hybrid-ongrid-6k.jpg" alt="Hybrid OnGrid 6K">
-        <div class="inverter-name">Hybrid OnGrid 6K</div>
-    </div>
-    <div class="inverter">
-        <img src="hybrid-8k.jpg" alt="Hybrid 8K">
-        <div class="inverter-name">Hybrid 8K</div>
-    </div>
-    <div class="inverter">
-        <img src="hybrid-10k.jpg" alt="Hybrid 10K">
-        <div class="inverter-name">Hybrid 10K</div>
-    </div>
-    <div class="inverter">
-        <img src="hybrid-15k.jpg" alt="Hybrid 15K">
-        <div class="inverter-name">Hybrid 15K</div>
-    </div>
-    <div class="inverter">
-        <img src="hybrid-50k.jpg" alt="Hybrid 50K">
-        <div class="inverter-name">Hybrid 50K</div>
-    </div>
-    <div class="inverter">
-        <img src="hybrid-80k.jpg" alt="Hybrid 80K">
-        <div class="inverter-name">Hybrid 80K</div>
-    </div>
-    <div class="inverter">
-        <img src="hybrid-offgrid-6k.jpg" alt="Hybrid OffGrid 6K">
-        <div class="inverter-name">Hybrid OffGrid 6K</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-30k-lv.jpg" alt="Deye 30K LV">
-        <div class="inverter-name">Deye 30K LV</div>
-    </div>
-    <div class="inverter">
-        <img src="deye-ongrid-30k.jpg" alt="Deye OnGrid 30K">
-        <div class="inverter-name">Deye OnGrid 30K</div>
-    </div>
-    <div class="inverter">
-        <img src="isuna-8k.jpg" alt="Isuna 8K">
-        <div class="inverter-name">Isuna 8K</div>
-    </div>
-    <div class="inverter">
-        <img src="solax-7.5.jpg" alt="Solax 7.5">
-        <div class="inverter-name">Solax 7.5</div>
+    <div class="container">
+        <h1>الأجهزة الكهربائية والتحكم</h1>
+        <div class="products-grid">
+            <!-- بداية بطاقات المنتجات -->
+            <div class="product-card">
+                <img src="صور/30k-3p-lv.jpg.png" alt="30k-3p-lv">
+                <h3>انفرتر 30كيلو ثلاثي الطور</h3>
+                <p>DEYE 30K LV</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-30k-lv.jpg.jpg" alt="deye-30k-lv">
+                <h3>انفرتر DEYE 30K LV</h3>
+                <p>هجين 30كيلو</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-hybrid-12kjpg.jpg" alt="deye-hybrid-12k">
+                <h3>انفرتر DEYE هجين 12كيلو</h3>
+                <p>Hybrid 12K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-hybrid-15kjpg.webp" alt="deye-hybrid-15k">
+                <h3>انفرتر DEYE هجين 15كيلو</h3>
+                <p>Hybrid 15K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-hybrid-20kjpg.jpg" alt="deye-hybrid-20k">
+                <h3>انفرتر DEYE هجين 20كيلو</h3>
+                <p>Hybrid 20K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-hybrid-25kjpg.jpg" alt="deye-hybrid-25k">
+                <h3>انفرتر DEYE هجين 25كيلو</h3>
+                <p>Hybrid 25K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-hybrid-30kjpg.jpg" alt="deye-hybrid-30k">
+                <h3>انفرتر DEYE هجين 30كيلو</h3>
+                <p>Hybrid 30K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-hybrid-8kjpg.webp" alt="deye-hybrid-8k">
+                <h3>انفرتر DEYE هجين 8كيلو</h3>
+                <p>Hybrid 8K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-ongrid-10k-bm2.jpg.jpg" alt="deye-ongrid-10k-bm2">
+                <h3>انفرتر DEYE متصل بالشبكة 10كيلو</h3>
+                <p>On Grid 10K BM2</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-ongrid-10kjpg.webp" alt="deye-ongrid-10k">
+                <h3>انفرتر DEYE متصل بالشبكة 10كيلو</h3>
+                <p>On Grid 10K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-ongrid-20kjpg.png" alt="deye-ongrid-20k">
+                <h3>انفرتر DEYE متصل بالشبكة 20كيلو</h3>
+                <p>On Grid 20K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-ongrid-30kjpg" alt="deye-ongrid-30k">
+                <h3>انفرتر DEYE متصل بالشبكة 30كيلو</h3>
+                <p>On Grid 30K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-ongrid-50kjpg.jpg" alt="deye-ongrid-50k">
+                <h3>انفرتر DEYE متصل بالشبكة 50كيلو</h3>
+                <p>On Grid 50K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/deye-ongrid-8k.jpg.jpg" alt="deye-ongrid-8k">
+                <h3>انفرتر DEYE متصل بالشبكة 8كيلو</h3>
+                <p>On Grid 8K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/hybrid-10k.jpg.webp" alt="hybrid-10k">
+                <h3>انفرتر هجين 10كيلو</h3>
+                <p>Hybrid 10K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/hybrid-15k.jpg.jpg" alt="hybrid-15k">
+                <h3>انفرتر هجين 15كيلو</h3>
+                <p>Hybrid 15K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/hybrid-50k.jpg.webp" alt="hybrid-50k">
+                <h3>انفرتر هجين 50كيلو</h3>
+                <p>Hybrid 50K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/hybrid-80k.jpg.jpg" alt="hybrid-80k">
+                <h3>انفرتر هجين 80كيلو</h3>
+                <p>Hybrid 80K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/hybrid-8k.jpg.jpg" alt="hybrid-8k">
+                <h3>انفرتر هجين 8كيلو</h3>
+                <p>Hybrid 8K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/hybrid-offgrid-6k.jpg.png" alt="hybrid-offgrid-6k">
+                <h3>انفرتر هجين خارج الشبكة 6كيلو</h3>
+                <p>Off Grid Hybrid 6K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/hybrid-ongrid-6k.jpg.jpg" alt="hybrid-ongrid-6k">
+                <h3>انفرتر هجين متصل بالشبكة 6كيلو</h3>
+                <p>On Grid Hybrid 6K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/isuna-8k.jpg.jpg" alt="isuna-8k">
+                <h3>انفرتر Isuna 8كيلو</h3>
+                <p>Isuna 8K</p>
+            </div>
+            <div class="product-card">
+                <img src="صور/solax-7.5.jpg.png" alt="solax-7.5">
+                <h3>انفرتر Solax 7.5كيلو</h3>
+                <p>Solax 7.5K</p>
+            </div>
+            <!-- نهاية بطاقات المنتجات -->
+        </div>
     </div>
 
+    <footer>
+        <p>شركة شمس المستقبل للطاقة الشمسية</p>
+        <p class="phone">📞 0123456789</p>
+        <p>📍 القاهرة، مصر</p>
+        <p>© 2025 جميع الحقوق محفوظة</p>
+    </footer>
 </body>
 </html>
