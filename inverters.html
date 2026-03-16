@@ -1,138 +1,195 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<title>Inverters</title>
-<style>
-    body { font-family: Arial; text-align: center; direction: rtl; margin: 20px; }
-    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .device { width: 200px; }
-    .device img { width: 100%; border: 1px solid #ccc; border-radius: 8px; }
-    .device-name { margin-top: 5px; font-weight: bold; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإنفرترات - الطاقة الشمسية</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9f9f9;
+            direction: rtl;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            border-right: 5px solid #ffaa00;
+            padding-right: 15px;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .device {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 10px 5px 15px;
+            text-align: center;
+        }
+        .device img {
+            width: 100%;
+            height: 140px;
+            object-fit: contain;
+            background: #f0f0f0;
+            border-bottom: 2px solid #ffaa00;
+        }
+        .device-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #222;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
+    <h1>قائمة الإنفرترات</h1>
+    <div class="grid">
 
-<h1>الانفيرترات</h1>
+        <!-- 30k-3p-lv.jpg.png -->
+        <div class="device">
+            <img src="images/30k-3p-lv.jpg.png" alt="30k-3p-lv">
+            <div class="device-name">30k-3p-lv</div>
+        </div>
 
-<div class="grid">
+        <!-- deye-30k-lv.jpg.jpg -->
+        <div class="device">
+            <img src="images/deye-30k-lv.jpg.jpg" alt="Deye 30K LV">
+            <div class="device-name">Deye 30K LV</div>
+        </div>
 
-  <div class="device">
-    <img src="images/30k-3p-l.v.jpg.png" alt="30k-3p-l.v">
-    <div class="device-name">30k-3p-l.v</div>
-  </div>
+        <!-- deye-hybrid-12kjpg.jpg -->
+        <div class="device">
+            <img src="images/deye-hybrid-12kjpg.jpg" alt="Deye Hybrid 12K">
+            <div class="device-name">Deye Hybrid 12K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-30k-lv.jpg.jpg" alt="Deye 30K LV">
-    <div class="device-name">Deye 30K LV</div>
-  </div>
+        <!-- deye-hybrid-15kjpg.webp -->
+        <div class="device">
+            <img src="images/deye-hybrid-15kjpg.webp" alt="Deye Hybrid 15K">
+            <div class="device-name">Deye Hybrid 15K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-hybrid-12k.jpg.jpg" alt="Deye Hybrid 12K">
-    <div class="device-name">Deye Hybrid 12K</div>
-  </div>
+        <!-- deye-hybrid-20kjpg.jpg -->
+        <div class="device">
+            <img src="images/deye-hybrid-20kjpg.jpg" alt="Deye Hybrid 20K">
+            <div class="device-name">Deye Hybrid 20K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-hybrid-15k.jpg.webp" alt="Deye Hybrid 15K">
-    <div class="device-name">Deye Hybrid 15K</div>
-  </div>
+        <!-- deye-hybrid-25kjpg.jpg -->
+        <div class="device">
+            <img src="images/deye-hybrid-25kjpg.jpg" alt="Deye Hybrid 25K">
+            <div class="device-name">Deye Hybrid 25K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-hybrid-20k.jpg.jpg" alt="Deye Hybrid 20K">
-    <div class="device-name">Deye Hybrid 20K</div>
-  </div>
+        <!-- deye-hybrid-30kjpg.jpg -->
+        <div class="device">
+            <img src="images/deye-hybrid-30kjpg.jpg" alt="Deye Hybrid 30K">
+            <div class="device-name">Deye Hybrid 30K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-hybrid-25k.jpg.jpg" alt="Deye Hybrid 25K">
-    <div class="device-name">Deye Hybrid 25K</div>
-  </div>
+        <!-- deye-hybrid-8kjpg.webp -->
+        <div class="device">
+            <img src="images/deye-hybrid-8kjpg.webp" alt="Deye Hybrid 8K">
+            <div class="device-name">Deye Hybrid 8K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-hybrid-30k.jpg.jpg" alt="Deye Hybrid 30K">
-    <div class="device-name">Deye Hybrid 30K</div>
-  </div>
+        <!-- deye-ongrid-10k-bm2.jpg.jpg -->
+        <div class="device">
+            <img src="images/deye-ongrid-10k-bm2.jpg.jpg" alt="Deye On Grid 10K BM2">
+            <div class="device-name">Deye On Grid 10K BM2</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-hybrid-8k.jpg.webp" alt="Deye Hybrid 8K">
-    <div class="device-name">Deye Hybrid 8K</div>
-  </div>
+        <!-- deye-ongrid-10kjpg.webp -->
+        <div class="device">
+            <img src="images/deye-ongrid-10kjpg.webp" alt="Deye On Grid 10K">
+            <div class="device-name">Deye On Grid 10K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-ongrid-10k-bm2.jpg.jpg" alt="Deye OnGrid 10K BM2">
-    <div class="device-name">Deye OnGrid 10K BM2</div>
-  </div>
+        <!-- deye-ongrid-20kjpg.png -->
+        <div class="device">
+            <img src="images/deye-ongrid-20kjpg.png" alt="Deye On Grid 20K">
+            <div class="device-name">Deye On Grid 20K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-ongrid-10k.jpg.webp" alt="Deye OnGrid 10K">
-    <div class="device-name">Deye OnGrid 10K</div>
-  </div>
+        <!-- deye-ongrid-30kjpg (بدون امتداد) -->
+        <div class="device">
+            <img src="images/deye-ongrid-30kjpg" alt="Deye On Grid 30K">
+            <div class="device-name">Deye On Grid 30K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-ongrid-20k.jpg.png" alt="Deye OnGrid 20K">
-    <div class="device-name">Deye OnGrid 20K</div>
-  </div>
+        <!-- deye-ongrid-50kjpg.jpg -->
+        <div class="device">
+            <img src="images/deye-ongrid-50kjpg.jpg" alt="Deye On Grid 50K">
+            <div class="device-name">Deye On Grid 50K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-ongrid-30k.jpg" alt="Deye OnGrid 30K">
-    <div class="device-name">Deye OnGrid 30K</div>
-  </div>
+        <!-- deye-ongrid-8k.jpg.jpg -->
+        <div class="device">
+            <img src="images/deye-ongrid-8k.jpg.jpg" alt="Deye On Grid 8K">
+            <div class="device-name">Deye On Grid 8K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-ongrid-50k.jpg.jpg" alt="Deye OnGrid 50K">
-    <div class="device-name">Deye OnGrid 50K</div>
-  </div>
+        <!-- hybrid-10k.jpg.webp -->
+        <div class="device">
+            <img src="images/hybrid-10k.jpg.webp" alt="Hybrid 10K">
+            <div class="device-name">Hybrid 10K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/deye-ongrid-8k.jpg.jpg" alt="Deye OnGrid 8K">
-    <div class="device-name">Deye OnGrid 8K</div>
-  </div>
+        <!-- hybrid-15k.jpg.jpg -->
+        <div class="device">
+            <img src="images/hybrid-15k.jpg.jpg" alt="Hybrid 15K">
+            <div class="device-name">Hybrid 15K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/hybrid -10k.jpg.webp" alt="Hybrid 10K">
-    <div class="device-name">Hybrid 10K</div>
-  </div>
+        <!-- hybrid-50k.jpg.webp -->
+        <div class="device">
+            <img src="images/hybrid-50k.jpg.webp" alt="Hybrid 50K">
+            <div class="device-name">Hybrid 50K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/hybrid-15k.jpg.jpg" alt="Hybrid 15K">
-    <div class="device-name">Hybrid 15K</div>
-  </div>
+        <!-- hybrid-80k.jpg.jpg -->
+        <div class="device">
+            <img src="images/hybrid-80k.jpg.jpg" alt="Hybrid 80K">
+            <div class="device-name">Hybrid 80K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/hybrid-50k.jpg.webp" alt="Hybrid 50K">
-    <div class="device-name">Hybrid 50K</div>
-  </div>
+        <!-- hybrid-8k.jpg.jpg -->
+        <div class="device">
+            <img src="images/hybrid-8k.jpg.jpg" alt="Hybrid 8K">
+            <div class="device-name">Hybrid 8K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/hybrid-80k.jpg.jpg" alt="Hybrid 80K">
-    <div class="device-name">Hybrid 80K</div>
-  </div>
+        <!-- hybrid-offgrid-6k.jpg.png -->
+        <div class="device">
+            <img src="images/hybrid-offgrid-6k.jpg.png" alt="Hybrid Off Grid 6K">
+            <div class="device-name">Hybrid Off Grid 6K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/hybrid-8k.jpg.jpg" alt="Hybrid 8K">
-    <div class="device-name">Hybrid 8K</div>
-  </div>
+        <!-- hybrid-ongrid-6k.jpg.jpg -->
+        <div class="device">
+            <img src="images/hybrid-ongrid-6k.jpg.jpg" alt="Hybrid On Grid 6K">
+            <div class="device-name">Hybrid On Grid 6K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/hybrid-offgrid-6k.jpg.png" alt="Hybrid OffGrid 6K">
-    <div class="device-name">Hybrid OffGrid 6K</div>
-  </div>
+        <!-- isuna-8k.jpg.jpg -->
+        <div class="device">
+            <img src="images/isuna-8k.jpg.jpg" alt="Isuna 8K">
+            <div class="device-name">Isuna 8K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/hybrid-ongrid-6k.jpg.jpg" alt="Hybrid OnGrid 6K">
-    <div class="device-name">Hybrid OnGrid 6K</div>
-  </div>
+        <!-- solax-7.5.jpg.png -->
+        <div class="device">
+            <img src="images/solax-7.5.jpg.png" alt="Solax 7.5K">
+            <div class="device-name">Solax 7.5K</div>
+        </div>
 
-  <div class="device">
-    <img src="images/isuna-8k.jpg.jpg" alt="Isuna 8K">
-    <div class="device-name">Isuna 8K</div>
-  </div>
-
-  <div class="device">
-    <img src="images/solax-7.5.jpg.png" alt="Solax 7.5">
-    <div class="device-name">Solax 7.5</div>
-  </div>
-
-</div>
-
+    </div>
 </body>
 </html>
